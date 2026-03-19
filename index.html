@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DDS Eta Bhata | Solanki Enterprises</title>
+<meta name="google-site-verification" content="google04dedcd89c4b219d" />
+<meta name="description" content="DDS Eta Bhata - Solanki Enterprises. Premium quality red bricks, coal, sand and woodworks supplier. Order online for doorstep delivery." />
+<meta name="keywords" content="DDS Eta Bhata, Solanki Enterprises, red bricks, brick factory, coal supply, river sand, woodworks, construction materials, Ballia" />
+<meta property="og:title" content="DDS Eta Bhata | Solanki Enterprises" />
+<meta property="og:description" content="Premium quality red bricks, coal, sand and woodworks. Order online!" />
+<meta property="og:url" content="https://ddsetabhata.netlify.app/" />
+<link rel="canonical" href="https://ddsetabhata.netlify.app/" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brick: #B5341C;
+    --brick-dark: #7A1E0C;
+    --brick-light: #D4583A;
+    --sand: #E8C98A;
+    --sand-light: #F5E6C8;
+    --charcoal: #1A1410;
+    --ash: #3D3530;
+    --smoke: #7A6E68;
+    --cream: #FAF5EE;
+    --white: #FFFFFF;
+    --coal: #2A2420;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--cream);
+    color: var(--ash);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(26,20,16,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--brick);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 70px;
+  }
+
+  .nav-brand {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .nav-logo {
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--sand);
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+
+  .nav-name {
+    display: flex; flex-direction: column;
+  }
+  .nav-name span:first-child {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--sand); font-size: 15px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .nav-name span:last-child {
+    color: var(--smoke); font-size: 11px; letter-spacing: 1px;
+  }
+
+  .nav-links { display: flex; gap: 30px; list-style: none; }
+  .nav-links a {
+    color: #ccc; text-decoration: none; font-size: 13px;
+    letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+    height: 2px; background: var(--brick-light);
+    transform: scaleX(0); transition: transform 0.3s;
+  }
+  .nav-links a:hover { color: var(--sand); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  .nav-cta {
+    background: var(--brick); color: white;
+    padding: 10px 22px; border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+    clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%);
+    transition: background 0.3s;
+  }
+  .nav-cta:hover { background: var(--brick-light); }
+
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 25px; height: 2px; background: var(--sand); transition: 0.3s; }
+
+  /* ===== HERO ===== */
+  #hero {
+    min-height: 100vh;
+    background: var(--charcoal);
+    position: relative; overflow: hidden;
+    display: flex; align-items: center;
+    padding-top: 70px;
+  }
+
+  .hero-texture {
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(181,52,28,0.03) 40px, rgba(181,52,28,0.03) 41px),
+      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(181,52,28,0.03) 60px, rgba(181,52,28,0.03) 61px);
+  }
+
+  .hero-glow {
+    position: absolute; top: -200px; right: -100px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(181,52,28,0.15) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+  }
+
+  .hero-content {
+    position: relative; z-index: 2;
+    padding: 0 5%;
+    max-width: 1300px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(181,52,28,0.2); border: 1px solid rgba(181,52,28,0.5);
+    color: var(--brick-light); padding: 6px 16px;
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 24px;
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    color: white; font-size: clamp(44px, 6vw, 80px);
+    line-height: 1.0; font-weight: 900;
+    margin-bottom: 8px;
+    animation: fadeUp 0.8s ease 0.2s both;
+  }
+
+  .hero-title .accent { color: var(--brick-light); }
+  .hero-title .small { font-size: 0.5em; color: var(--sand); display: block; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+
+  .hero-subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--sand); font-size: 22px; letter-spacing: 4px; text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeUp 0.8s ease 0.3s both;
+  }
+
+  .hero-desc {
+    color: var(--smoke); font-size: 16px; line-height: 1.8; max-width: 500px;
+    margin-bottom: 40px;
+    animation: fadeUp 0.8s ease 0.4s both;
+  }
+
+  .hero-buttons {
+    display: flex; gap: 16px; flex-wrap: wrap;
+    animation: fadeUp 0.8s ease 0.5s both;
+  }
+
+  .btn-primary {
+    background: var(--brick); color: white;
+    padding: 16px 36px; border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px; letter-spacing: 3px; text-transform: uppercase;
+    clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 8% 100%, 0 70%);
+    transition: all 0.3s; text-decoration: none; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--brick-light); transform: translateY(-2px); }
+
+  .btn-outline {
+    background: transparent; color: var(--sand);
+    padding: 16px 36px; border: 1px solid rgba(232,201,138,0.4); cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px; letter-spacing: 3px; text-transform: uppercase;
+    transition: all 0.3s; text-decoration: none; display: inline-block;
+  }
+  .btn-outline:hover { background: rgba(232,201,138,0.1); border-color: var(--sand); }
+
+  .hero-visual {
+    animation: fadeUp 0.8s ease 0.3s both;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .brick-stack {
+    position: relative; width: 380px; height: 380px;
+  }
+
+  .brick-row {
+    display: flex; gap: 6px; margin-bottom: 6px;
+  }
+
+  .brick {
+    height: 40px; background: var(--brick);
+    border-radius: 2px;
+    position: relative; overflow: hidden;
+    animation: brickLoad 0.5s ease both;
+  }
+
+  .brick::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(0,0,0,0.2) 100%);
+  }
+
+  .brick::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  .brick-w1 { width: 80px; }
+  .brick-w2 { width: 120px; }
+  .brick-w3 { width: 100px; }
+  .brick-dark { background: var(--brick-dark); }
+  .brick-medium { background: #C04030; }
+
+  .hero-stats {
+    position: absolute; bottom: -30px; right: -20px;
+    background: rgba(26,20,16,0.9);
+    border: 1px solid rgba(181,52,28,0.4);
+    padding: 20px 24px; backdrop-filter: blur(10px);
+  }
+
+  .stat-item { margin-bottom: 12px; }
+  .stat-item:last-child { margin-bottom: 0; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    color: var(--brick-light); font-size: 28px; font-weight: 900;
+  }
+  .stat-label { color: var(--smoke); font-size: 11px; letter-spacing: 1px; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes brickLoad {
+    from { opacity: 0; transform: scaleX(0); }
+    to { opacity: 1; transform: scaleX(1); }
+  }
+
+  /* ===== MARQUEE ===== */
+  .marquee-bar {
+    background: var(--brick); padding: 14px 0; overflow: hidden;
+    border-top: 2px solid var(--brick-dark); border-bottom: 2px solid var(--brick-dark);
+  }
+
+  .marquee-track {
+    display: flex; gap: 60px; white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-item {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 16px;
+  }
+
+  .marquee-dot { width: 6px; height: 6px; background: var(--sand); border-radius: 50%; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ===== SECTIONS ===== */
+  section { padding: 100px 5%; }
+
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--brick); font-size: 12px; letter-spacing: 4px; text-transform: uppercase;
+    margin-bottom: 12px; display: flex; align-items: center; gap: 12px;
+  }
+  .section-label::before { content: ''; width: 30px; height: 2px; background: var(--brick); }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 56px); font-weight: 900;
+    line-height: 1.1; margin-bottom: 20px;
+  }
+
+  .section-desc { color: var(--smoke); font-size: 16px; line-height: 1.8; max-width: 600px; }
+
+  /* ===== ABOUT ===== */
+  #about { background: white; }
+
+  .about-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+
+  .about-visual {
+    position: relative;
+  }
+
+  .about-img-frame {
+    width: 100%; aspect-ratio: 4/3;
+    background: linear-gradient(135deg, var(--brick-dark) 0%, var(--brick) 50%, var(--brick-light) 100%);
+    position: relative; overflow: hidden;
+    clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%);
+  }
+
+  .factory-illustration {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .factory-svg { width: 80%; height: 80%; opacity: 0.9; }
+
+  .about-badge {
+    position: absolute; bottom: -20px; left: -20px;
+    background: var(--charcoal); padding: 20px 28px;
+    border-left: 4px solid var(--brick);
+  }
+  .about-badge .num {
+    font-family: 'Playfair Display', serif;
+    color: var(--brick-light); font-size: 40px; font-weight: 900;
+  }
+  .about-badge p { color: #aaa; font-size: 12px; letter-spacing: 1px; }
+
+  .about-text { padding-right: 20px; }
+
+  .features-list { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .feature-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 16px; background: var(--cream);
+    border-left: 3px solid var(--brick);
+  }
+
+  .feature-icon { font-size: 20px; flex-shrink: 0; }
+  .feature-item h4 { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: var(--ash); }
+  .feature-item p { font-size: 12px; color: var(--smoke); line-height: 1.5; }
+
+  /* ===== PRODUCTS ===== */
+  #products { background: var(--charcoal); }
+  #products .section-title { color: white; }
+  #products .section-label { color: var(--brick-light); }
+  #products .section-label::before { background: var(--brick-light); }
+
+  .products-header {
+    max-width: 1300px; margin: 0 auto 60px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+
+  .products-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+  }
+
+  .product-card {
+    background: var(--coal); position: relative; overflow: hidden;
+    transition: transform 0.4s; cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .product-card:hover { transform: translateY(-8px); z-index: 2; }
+  .product-card:hover .product-overlay { opacity: 1; }
+  .product-card:hover .product-img-bg { transform: scale(1.05); }
+
+  .product-img-bg {
+    height: 240px; transition: transform 0.5s;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+
+  .prod-brick { background: linear-gradient(135deg, #7A1E0C, #B5341C, #D4583A); }
+  .prod-coal { background: linear-gradient(135deg, #1A1410, #2A2420, #3D3530); }
+  .prod-sand { background: linear-gradient(135deg, #A0834A, #C8A96A, #E8C98A); }
+  .prod-wood { background: linear-gradient(135deg, #3D2010, #6B3C1A, #8B5A2B); }
+  .prod-cement { background: linear-gradient(135deg, #606060, #909090, #B0B0B0); }
+  .prod-stone { background: linear-gradient(135deg, #404040, #707070, #909090); }
+
+  .product-icon { font-size: 64px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+
+  .product-info { padding: 24px; }
+  .product-tag {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--brick-light); margin-bottom: 8px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    color: white; font-size: 22px; font-weight: 700; margin-bottom: 10px;
+  }
+  .product-desc { color: var(--smoke); font-size: 13px; line-height: 1.7; margin-bottom: 16px; }
+  .product-price {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--sand); font-size: 18px; font-weight: 600;
+  }
+  .product-price span { color: var(--smoke); font-size: 12px; font-weight: 400; }
+
+  .product-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(181,52,28,0.95), transparent);
+    padding: 24px; opacity: 0; transition: opacity 0.3s;
+    display: flex; align-items: flex-end;
+  }
+
+  .add-cart-btn {
+    width: 100%; padding: 12px;
+    background: white; color: var(--brick-dark);
+    border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
+    transition: all 0.2s;
+  }
+  .add-cart-btn:hover { background: var(--sand); }
+
+  /* ===== SHOP / ORDER ===== */
+  #shop { background: var(--cream); }
+
+  .shop-container { max-width: 1300px; margin: 0 auto; }
+
+  .shop-header { margin-bottom: 50px; }
+
+  .order-grid { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: start; }
+
+  .catalog-list { display: flex; flex-direction: column; gap: 16px; }
+
+  .catalog-item {
+    background: white; display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 20px; align-items: center; padding: 20px 24px;
+    border: 1px solid #eee; transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .catalog-item:hover { border-color: var(--brick); box-shadow: 0 4px 20px rgba(181,52,28,0.1); }
+
+  .item-icon-box {
+    width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; background: var(--cream);
+  }
+
+  .item-details h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+  .item-details p { font-size: 13px; color: var(--smoke); }
+  .item-unit { font-size: 11px; color: var(--brick); letter-spacing: 1px; margin-top: 4px; }
+
+  .item-order { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .item-price { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--brick); font-weight: 700; }
+  .item-price small { font-family: 'Barlow', sans-serif; font-size: 11px; color: var(--smoke); font-weight: 400; }
+
+  .qty-control { display: flex; align-items: center; gap: 0; }
+  .qty-btn {
+    width: 32px; height: 32px; border: 1px solid #ddd;
+    background: white; cursor: pointer; font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s; color: var(--ash);
+  }
+  .qty-btn:hover { background: var(--brick); color: white; border-color: var(--brick); }
+  .qty-display {
+    width: 44px; height: 32px; border: 1px solid #ddd; border-left: none; border-right: none;
+    text-align: center; font-size: 14px; font-weight: 600; background: white;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ORDER SUMMARY */
+  .order-summary {
+    background: var(--charcoal); padding: 32px;
+    position: sticky; top: 90px;
+  }
+
+  .summary-title {
+    font-family: 'Playfair Display', serif;
+    color: white; font-size: 22px; font-weight: 700; margin-bottom: 24px;
+    padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .summary-items { margin-bottom: 20px; min-height: 100px; }
+  .summary-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .summary-row .name { color: #bbb; font-size: 13px; }
+  .summary-row .amount { color: var(--sand); font-size: 13px; font-weight: 600; }
+  .empty-cart { color: var(--smoke); font-size: 13px; text-align: center; padding: 20px 0; }
+
+  .summary-total {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 0; border-top: 2px solid var(--brick); margin-top: 10px;
+  }
+  .summary-total .label { color: white; font-weight: 600; letter-spacing: 1px; font-size: 14px; }
+  .summary-total .total-amt {
+    font-family: 'Playfair Display', serif;
+    color: var(--brick-light); font-size: 26px; font-weight: 900;
+  }
+
+  .checkout-form { margin-top: 20px; }
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; color: #aaa; font-size: 11px; letter-spacing: 1px; margin-bottom: 6px; text-transform: uppercase; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 12px 14px;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    color: white; font-family: 'Barlow', sans-serif; font-size: 14px;
+    outline: none; transition: border-color 0.3s;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--brick);
+  }
+  .form-group textarea { resize: vertical; height: 80px; }
+  .form-group select { cursor: pointer; }
+  .form-group select option { background: var(--charcoal); }
+
+  .place-order-btn {
+    width: 100%; padding: 16px;
+    background: var(--brick); color: white; border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px; letter-spacing: 3px; text-transform: uppercase;
+    margin-top: 10px; transition: all 0.3s;
+    clip-path: polygon(0 0, 94% 0, 100% 30%, 100% 100%, 6% 100%, 0 70%);
+  }
+  .place-order-btn:hover { background: var(--brick-light); transform: translateY(-2px); }
+
+  /* ===== WHY US ===== */
+  #why { background: white; }
+
+  .why-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+
+  .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  .why-card {
+    padding: 28px; background: var(--cream);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+  }
+  .why-card:hover { border-bottom-color: var(--brick); transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+
+  .why-icon { font-size: 36px; margin-bottom: 14px; }
+  .why-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--ash); }
+  .why-card p { font-size: 13px; color: var(--smoke); line-height: 1.7; }
+
+  .why-text {}
+  .process-steps { margin-top: 30px; }
+  .step {
+    display: flex; gap: 20px; align-items: flex-start;
+    padding: 20px 0; border-bottom: 1px solid #eee;
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; font-weight: 900; color: rgba(181,52,28,0.15);
+    line-height: 1; flex-shrink: 0; width: 50px;
+  }
+  .step h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .step p { font-size: 13px; color: var(--smoke); line-height: 1.6; }
+
+  /* ===== CONTACT ===== */
+  #contact { background: var(--charcoal); }
+  #contact .section-title { color: white; }
+
+  .contact-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+  }
+
+  .contact-info { }
+
+  .contact-detail {
+    display: flex; gap: 16px; align-items: flex-start;
+    margin-bottom: 28px; padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .contact-detail:last-child { border-bottom: none; }
+  .contact-icon {
+    width: 48px; height: 48px; background: rgba(181,52,28,0.2);
+    border: 1px solid rgba(181,52,28,0.4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .contact-detail h4 { color: var(--sand); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .contact-detail p { color: #bbb; font-size: 15px; line-height: 1.7; }
+  .contact-detail a { color: var(--brick-light); text-decoration: none; }
+  .contact-detail a:hover { text-decoration: underline; }
+
+  .contact-form-box {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 40px;
+  }
+
+  .contact-form-title {
+    font-family: 'Playfair Display', serif;
+    color: white; font-size: 26px; font-weight: 700; margin-bottom: 28px;
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .submit-btn {
+    width: 100%; padding: 16px;
+    background: var(--brick); color: white; border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px; letter-spacing: 3px; text-transform: uppercase;
+    transition: all 0.3s; margin-top: 8px;
+  }
+  .submit-btn:hover { background: var(--brick-light); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--coal);
+    border-top: 2px solid var(--brick);
+    padding: 50px 5% 30px;
+  }
+
+  .footer-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand-name {
+    font-family: 'Playfair Display', serif;
+    color: white; font-size: 24px; font-weight: 900; margin-bottom: 4px;
+  }
+  .footer-sub { color: var(--brick-light); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+  .footer-desc { color: var(--smoke); font-size: 13px; line-height: 1.8; margin-bottom: 20px; }
+
+  .footer-col h4 {
+    color: white; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 10px; }
+  .footer-col a { color: var(--smoke); text-decoration: none; font-size: 13px; transition: color 0.3s; }
+  .footer-col a:hover { color: var(--sand); }
+
+  .footer-bottom {
+    max-width: 1300px; margin: 0 auto;
+    padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-bottom p { color: var(--smoke); font-size: 12px; }
+
+  /* ===== MODAL ===== */
+  .modal {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: rgba(0,0,0,0.8); backdrop-filter: blur(4px);
+    align-items: center; justify-content: center;
+  }
+  .modal.open { display: flex; }
+  .modal-box {
+    background: var(--charcoal); padding: 50px;
+    max-width: 500px; width: 90%; text-align: center;
+    border: 1px solid rgba(181,52,28,0.4);
+    position: relative;
+    animation: modalIn 0.4s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .modal-icon { font-size: 60px; margin-bottom: 20px; }
+  .modal-title { font-family: 'Playfair Display', serif; color: white; font-size: 28px; margin-bottom: 12px; }
+  .modal-desc { color: var(--smoke); font-size: 15px; line-height: 1.7; margin-bottom: 30px; }
+  .modal-close {
+    background: var(--brick); color: white; padding: 14px 40px;
+    border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 2px;
+  }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed; bottom: 30px; right: 30px; z-index: 8888;
+    background: var(--brick); color: white;
+    padding: 14px 24px; font-size: 14px; font-weight: 500;
+    transform: translateY(100px); opacity: 0; transition: all 0.3s;
+    border-left: 4px solid var(--sand);
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  /* ===== TRANSPORT ===== */
+  .transport-banner {
+    background: linear-gradient(135deg, rgba(181,52,28,0.15), rgba(26,20,16,0.95));
+    border: 1px solid rgba(181,52,28,0.4);
+    margin-top: 2px;
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .transport-banner::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(181,52,28,0.03) 20px, rgba(181,52,28,0.03) 21px);
+  }
+  .transport-left {
+    display: flex; gap: 28px; align-items: flex-start;
+    position: relative; z-index: 1;
+  }
+  .transport-truck {
+    font-size: 72px; line-height: 1; flex-shrink: 0;
+    animation: truckBounce 2s ease-in-out infinite;
+  }
+  @keyframes truckBounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .transport-title {
+    font-family: "Playfair Display", serif;
+    color: white; font-size: 28px; font-weight: 900;
+    margin-bottom: 10px; line-height: 1.2;
+  }
+  .transport-desc {
+    color: #bbb; font-size: 14px; line-height: 1.7;
+    max-width: 480px; margin-bottom: 20px;
+  }
+  .transport-features {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  }
+  .transport-feat {
+    color: var(--sand); font-size: 13px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .transport-right {
+    text-align: center; flex-shrink: 0;
+    position: relative; z-index: 1;
+  }
+  .transport-price {
+    font-family: "Playfair Display", serif;
+    color: var(--brick-light); font-size: 24px; font-weight: 900;
+    margin-bottom: 4px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-content { grid-template-columns: 1fr; }
+    .brick-stack { width: 280px; height: 280px; }
+    .hero-stats { position: relative; bottom: auto; right: auto; margin-top: 20px; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-content { grid-template-columns: 1fr; text-align: center; }
+    .hero-buttons { justify-content: center; }
+    .hero-visual { display: none; }
+    .about-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .order-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr; }
+    .transport-banner { flex-direction: column; padding: 28px 20px; }
+    .transport-left { flex-direction: column; gap: 16px; }
+    .transport-features { grid-template-columns: 1fr; }
+    .transport-right { width: 100%; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .catalog-item { grid-template-columns: 60px 1fr; }
+    .item-order { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+    .features-list { grid-template-columns: 1fr; }
+    .why-cards { grid-template-columns: 1fr; }
+    section { padding: 60px 5%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-logo"><img src="data:image/jpeg;base64,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" alt="DDS Eta Bhata Logo"></div>
+    <div class="nav-name">
+      <span>DDS Eta Bhata</span>
+      <span>Solanki Enterprises</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#shop">Order</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Get Quote</button>
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-texture"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">Est. Solanki Enterprises</div>
+      <div class="hero-title">
+        <span class="small">Premium Quality</span>
+        DDS <span class="accent">Eta Bhata</span>
+      </div>
+      <div class="hero-subtitle">Red Brick Factory & Building Materials</div>
+      <p class="hero-desc">Supplying premium quality red bricks, coal, sand, and woodworks across the region. Built on tradition, driven by quality — your trusted partner in construction.</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn-primary">Order Now</a>
+        <a href="#products" class="btn-outline">View Products</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="brick-stack">
+        <div style="display:flex;flex-direction:column;gap:6px;padding:20px;">
+          <div class="brick-row">
+            <div class="brick brick-w2" style="animation-delay:0.1s"></div>
+            <div class="brick brick-w1 brick-dark" style="animation-delay:0.15s"></div>
+            <div class="brick brick-w1 brick-medium" style="animation-delay:0.2s"></div>
+          </div>
+          <div class="brick-row" style="margin-left:20px">
+            <div class="brick brick-w1 brick-dark" style="animation-delay:0.25s"></div>
+            <div class="brick brick-w3" style="animation-delay:0.3s"></div>
+            <div class="brick brick-w2 brick-medium" style="animation-delay:0.35s"></div>
+          </div>
+          <div class="brick-row">
+            <div class="brick brick-w3 brick-medium" style="animation-delay:0.4s"></div>
+            <div class="brick brick-w2" style="animation-delay:0.45s"></div>
+            <div class="brick brick-w1 brick-dark" style="animation-delay:0.5s"></div>
+          </div>
+          <div class="brick-row" style="margin-left:10px">
+            <div class="brick brick-w2 brick-dark" style="animation-delay:0.55s"></div>
+            <div class="brick brick-w1" style="animation-delay:0.6s"></div>
+            <div class="brick brick-w3 brick-medium" style="animation-delay:0.65s"></div>
+          </div>
+          <div class="brick-row">
+            <div class="brick brick-w1 brick-medium" style="animation-delay:0.7s"></div>
+            <div class="brick brick-w3 brick-dark" style="animation-delay:0.75s"></div>
+            <div class="brick brick-w2" style="animation-delay:0.8s"></div>
+          </div>
+          <div class="brick-row" style="margin-left:20px">
+            <div class="brick brick-w2 brick-medium" style="animation-delay:0.85s"></div>
+            <div class="brick brick-w3 brick-dark" style="animation-delay:0.9s"></div>
+          </div>
+          <div class="brick-row">
+            <div class="brick brick-w3" style="animation-delay:0.95s"></div>
+            <div class="brick brick-w2 brick-medium" style="animation-delay:1s"></div>
+            <div class="brick brick-w1 brick-dark" style="animation-delay:1.05s"></div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">20K+</div>
+            <div class="stat-label">Bricks / Day</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">50000+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">35+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item"><div class="marquee-dot"></div>Premium Red Bricks</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Coal Supply</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>River Sand</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Woodworks</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Bulk Orders Welcome</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Doorstep Delivery</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Solanki Enterprises</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>DDS Eta Bhata</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Premium Red Bricks</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Coal Supply</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>River Sand</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Woodworks</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Bulk Orders Welcome</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Doorstep Delivery</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>Solanki Enterprises</div>
+    <div class="marquee-item"><div class="marquee-dot"></div>DDS Eta Bhata</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-img-frame">
+        <div class="factory-illustration">
+          <svg class="factory-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Factory building -->
+            <rect x="50" y="150" width="300" height="120" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <!-- Chimneys -->
+            <rect x="80" y="80" width="30" height="70" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <rect x="140" y="100" width="25" height="50" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <rect x="250" y="90" width="28" height="60" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <!-- Smoke -->
+            <circle cx="95" cy="70" r="12" fill="rgba(255,255,255,0.1)"/>
+            <circle cx="108" cy="58" r="9" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="153" cy="90" r="10" fill="rgba(255,255,255,0.1)"/>
+            <circle cx="264" cy="78" r="11" fill="rgba(255,255,255,0.1)"/>
+            <!-- Doors & windows -->
+            <rect x="170" y="190" width="60" height="80" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+            <rect x="90" y="190" width="40" height="40" fill="rgba(232,201,138,0.2)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+            <rect x="270" y="190" width="40" height="40" fill="rgba(232,201,138,0.2)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+            <!-- Brick texture on wall -->
+            <line x1="50" y1="170" x2="350" y2="170" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <line x1="50" y1="190" x2="350" y2="190" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <line x1="50" y1="210" x2="350" y2="210" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <line x1="50" y1="230" x2="350" y2="230" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <line x1="50" y1="250" x2="350" y2="250" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <!-- Brick vertical lines offset -->
+            <line x1="80" y1="150" x2="80" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="130" y1="150" x2="130" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="200" y1="150" x2="200" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="270" y1="150" x2="270" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <!-- Ground -->
+            <rect x="0" y="270" width="400" height="30" fill="rgba(0,0,0,0.3)"/>
+            <!-- Company name on building -->
+            <text x="200" y="170" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="serif">DDS ETA BHATA</text>
+          </svg>
+        </div>
+      </div>
+      <div class="about-badge">
+        <div class="num">35+</div>
+        <p>Years of Excellence</p>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">Building the Future,<br>Brick by Brick</h2>
+      <p class="section-desc">DDS Eta Bhata, under the banner of <strong>Solanki Enterprises</strong>, has been a cornerstone of the construction materials industry. Our factory operates with state-of-the-art kilns producing high-quality red bricks that meet the rigorous demands of modern construction.</p>
+      <p class="section-desc" style="margin-top:16px;">Beyond bricks, we supply premium coal, river sand, and offer expert woodworks — making us your one-stop solution for all building material needs.</p>
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-icon">🧱</div>
+          <div>
+            <h4>Premium Red Bricks</h4>
+            <p>High-strength, uniform size bricks from traditional kilns</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔥</div>
+          <div>
+            <h4>Coal Supply</h4>
+            <p>Quality coal for industrial & domestic use</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏖️</div>
+          <div>
+            <h4>River Sand</h4>
+            <p>Clean, graded sand for all construction needs</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🪵</div>
+          <div>
+            <h4>Woodworks</h4>
+            <p>Custom woodwork and timber supply services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-header">
+    <div>
+      <div class="section-label">Our Products</div>
+      <h2 class="section-title" style="color:white">What We Supply</h2>
+    </div>
+    <a href="#shop" class="btn-outline" style="flex-shrink:0">Order All Products →</a>
+  </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-img-bg prod-brick">
+        <div class="product-icon">🧱</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">Bestseller · Factory Direct</div>
+        <div class="product-name">Premium Red Bricks</div>
+        <p class="product-desc">Kiln-fired red bricks with high compressive strength, uniform dimensions, and excellent durability. Ideal for load-bearing walls and residential construction.</p>
+        <div class="product-price">₹7–9 <span>/ piece (bulk pricing available)</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('Red Bricks', 7, '1000 pieces')">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-bg prod-coal">
+        <div class="product-icon">🪨</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">High Calorific Value</div>
+        <div class="product-name">Industrial Coal</div>
+        <p class="product-desc">Premium quality coal suitable for brick kilns, industrial furnaces, and heating applications. Available in large quantities with prompt delivery.</p>
+        <div class="product-price">₹11,500 <span>/ tonne</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('Industrial Coal', 11500, '1 tonne')">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-bg prod-sand">
+        <div class="product-icon">🏖️</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">Construction Grade</div>
+        <div class="product-name">River Sand</div>
+        <p class="product-desc">Naturally graded river sand, ideal for concrete mixing, plaster, and masonry work. Clean, silt-free, and sourced responsibly.</p>
+        <div class="product-price">₹1,200 <span>/ cubic meter</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('River Sand', 1200, '1 cubic meter')">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-bg prod-wood">
+        <div class="product-icon">🪵</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">Custom Orders</div>
+        <div class="product-name">Timber & Woodworks</div>
+        <p class="product-desc">Quality timber supply and custom woodwork services. From rough lumber to finished carpentry — we handle all your wood-related construction needs.</p>
+        <div class="product-price">Custom <span>/ quote on request</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('Woodworks', 0, 'Custom')">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-bg prod-cement" style="background: linear-gradient(135deg, #555, #888, #aaa)">
+        <div class="product-icon">🏗️</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">Mixed Lots</div>
+        <div class="product-name">Construction Aggregates</div>
+        <p class="product-desc">Gravel, crushed stone, and mixed aggregates for foundation work, road construction, and concrete production. Bulk supply available.</p>
+        <div class="product-price">₹900 <span>/ cubic meter</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('Aggregates', 900, '1 cubic meter')">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-bg" style="background: linear-gradient(135deg, #1A1410, var(--brick-dark), var(--brick));">
+        <div class="product-icon">📦</div>
+      </div>
+      <div class="product-info">
+        <div class="product-tag">Best Value · Complete Package</div>
+        <div class="product-name">Construction Bundle</div>
+        <p class="product-desc">Get all your materials in one go — bricks, sand, and aggregates — at a discounted bundle price. Perfect for large construction projects.</p>
+        <div class="product-price">Contact <span>/ for bundle quote</span></div>
+      </div>
+      <div class="product-overlay">
+        <button class="add-cart-btn" onclick="addToCart('Construction Bundle', 0, 'Bundle')">Add to Order</button>
+      </div>
+    </div>
+
+    <!-- TRANSPORT BANNER -->
+    <div class="transport-banner">
+      <div class="transport-left">
+        <div class="transport-truck">🚛</div>
+        <div class="transport-text">
+          <div class="product-tag" style="color:var(--sand);margin-bottom:8px;">Transport Services &middot; Available Now</div>
+          <div class="transport-title">We Also Provide Transport Services</div>
+          <p class="transport-desc">Own fleet of trucks available for hire &mdash; material delivery, goods transport, local &amp; long distance. Whatever you need to move, we move it safely and on time.</p>
+          <div class="transport-features">
+            <div class="transport-feat"><span>🧱</span> Bricks, Sand &amp; Coal Delivery</div>
+            <div class="transport-feat"><span>📦</span> Goods Transport for Hire</div>
+            <div class="transport-feat"><span>🛣️</span> Local &amp; Long Distance</div>
+            <div class="transport-feat"><span>⏱️</span> On-Time Delivery Guaranteed</div>
+          </div>
+        </div>
+      </div>
+      <div class="transport-right">
+        <div class="transport-price">Available for Hire</div>
+        <p style="color:#bbb;font-size:13px;margin-bottom:20px;">Contact us for rates &amp; availability</p>
+        <a href="#contact" class="btn-primary" style="display:inline-block;text-decoration:none;clip-path:none;padding:14px 28px;">Enquire Now &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHOP / ORDER -->
+<section id="shop">
+  <div class="shop-container">
+    <div class="shop-header">
+      <div class="section-label">Place an Order</div>
+      <h2 class="section-title">Order Your Materials</h2>
+      <p class="section-desc">Select quantities below and fill in your delivery details. We'll confirm your order within 24 hours.</p>
+    </div>
+    <div class="order-grid">
+      <div class="catalog-list">
+        <div class="catalog-item">
+          <div class="item-icon-box">🧱</div>
+          <div class="item-details">
+            <h3>Premium Red Bricks</h3>
+            <p>Kiln-fired, high-strength construction bricks</p>
+            <div class="item-unit">Per 1000 pieces</div>
+          </div>
+          <div class="item-order">
+            <div class="item-price">₹8,000 <small>/ 1000 pcs</small></div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('brick',-1)">−</button>
+              <div class="qty-display" id="qty-brick">0</div>
+              <button class="qty-btn" onclick="changeQty('brick',1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="item-icon-box">🪨</div>
+          <div class="item-details">
+            <h3>Industrial Coal</h3>
+            <p>High calorific value coal for kilns & industry</p>
+            <div class="item-unit">Per tonne</div>
+          </div>
+          <div class="item-order">
+            <div class="item-price">₹11,500 <small>/ tonne</small></div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('coal',-1)">−</button>
+              <div class="qty-display" id="qty-coal">0</div>
+              <button class="qty-btn" onclick="changeQty('coal',1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="item-icon-box">🏖️</div>
+          <div class="item-details">
+            <h3>River Sand</h3>
+            <p>Clean, graded sand for construction & plaster</p>
+            <div class="item-unit">Per cubic meter</div>
+          </div>
+          <div class="item-order">
+            <div class="item-price">₹1,200 <small>/ m³</small></div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('sand',-1)">−</button>
+              <div class="qty-display" id="qty-sand">0</div>
+              <button class="qty-btn" onclick="changeQty('sand',1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="item-icon-box">🪵</div>
+          <div class="item-details">
+            <h3>Timber / Woodworks</h3>
+            <p>Custom woodwork and timber supply</p>
+            <div class="item-unit">Custom order — price on inquiry</div>
+          </div>
+          <div class="item-order">
+            <div class="item-price">On Quote</div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('wood',-1)">−</button>
+              <div class="qty-display" id="qty-wood">0</div>
+              <button class="qty-btn" onclick="changeQty('wood',1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="item-icon-box">🏗️</div>
+          <div class="item-details">
+            <h3>Construction Aggregates</h3>
+            <p>Gravel, crushed stone, and mixed aggregates</p>
+            <div class="item-unit">Per cubic meter</div>
+          </div>
+          <div class="item-order">
+            <div class="item-price">₹900 <small>/ m³</small></div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('agg',-1)">−</button>
+              <div class="qty-display" id="qty-agg">0</div>
+              <button class="qty-btn" onclick="changeQty('agg',1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-summary">
+        <div class="summary-title">📋 Order Summary</div>
+        <div class="summary-items" id="summaryItems">
+          <div class="empty-cart">No items selected yet.<br>Add products from the left.</div>
+        </div>
+        <div class="summary-total">
+          <span class="label">ESTIMATED TOTAL</span>
+          <span class="total-amt" id="totalAmt">₹0</span>
+        </div>
+        <div class="checkout-form">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="custName" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="custPhone" placeholder="+91 XXXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label>Delivery Address *</label>
+            <textarea id="custAddress" placeholder="Site address, city, pincode"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Delivery Timing</label>
+            <select id="custDelivery">
+              <option>As soon as possible</option>
+              <option>Within 1 Day</option>
+              <option>Within 2 Day</option>
+              <option>Within 1 week</option>
+              <option>Flexible / Will confirm later</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Special Requirements</label>
+            <textarea id="custNote" placeholder="Any specific requirements or notes..."></textarea>
+          </div>
+          <button class="place-order-btn" onclick="placeOrder()">🧱 Place Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-grid">
+    <div class="why-text">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">Quality You Can <em>Build On</em></h2>
+      <p class="section-desc">For over a decade, Solanki Enterprises has supplied construction materials that builders trust. Our commitment to quality, reliability, and fair pricing sets us apart.</p>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h4>Place Your Order</h4>
+            <p>Call us, message us, or use our online order form. Tell us your requirements and we'll prepare a quote within hours.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h4>Confirm & Schedule</h4>
+            <p>We confirm availability, finalize pricing for bulk orders, and schedule your delivery at a convenient time.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h4>Delivered to Your Site</h4>
+            <p>Materials are loaded and dispatched directly to your construction site — on time, every time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-cards">
+      <div class="why-card">
+        <div class="why-icon">✅</div>
+        <h3>Quality Assured</h3>
+        <p>Every batch of bricks is tested for strength and uniformity before leaving our factory.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🚛</div>
+        <h3>Timely Delivery</h3>
+        <p>Fleet of transport vehicles ensures your materials arrive on schedule, every time.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Competitive Pricing</h3>
+        <p>Factory-direct pricing with special discounts for bulk and repeat orders.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📞</div>
+        <h3>Personal Service</h3>
+        <p>Direct contact with the owner — no middlemen, no delays in communication.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📦</div>
+        <h3>Bulk Supply</h3>
+        <p>Equipped to handle large-scale projects with consistent supply throughout construction.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌿</div>
+        <h3>Responsible Sourcing</h3>
+        <p>Committed to environmental responsibility in our brick-making and material sourcing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="section-label" style="color:var(--brick-light)"><span style="background:var(--brick-light);display:inline-block;width:30px;height:2px;"></span>Get In Touch</div>
+      <h2 class="section-title" style="color:white;margin-bottom:40px">Talk to Us Directly</h2>
+
+      <div class="contact-detail">
+        <div class="contact-icon">🏭</div>
+        <div>
+          <h4>Factory Name</h4>
+          <p>DDS Eta Bhata<br><span style="color:var(--brick-light)">Solanki Enterprises</span></p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h4>Location</h4>
+          <p>Main Road, Matihi, Sahdesh <br>Ballia , Uttar Pradesh — 221701</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div>
+          <h4>Phone / WhatsApp</h4>
+          <p><a href="tel:+918083870609">+91 8083870609</a><br>
+          <a href="https://wa.me/8083870609">Chat on WhatsApp</a></p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <h4>Business Hours</h4>
+          <p>Monday – Saturday: 6:00 AM – 8:00 PM<br>Sunday: 8:00 AM – 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-box">
+      <div class="contact-form-title">Send Us a Message</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="cName" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="cPhone" placeholder="+91 XXXXXXXXXX">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="cEmail" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="cSubject" placeholder="Inquiry about bricks / bulk order / etc.">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="cMessage" style="height:120px" placeholder="Tell us about your project and material requirements..."></textarea>
+      </div>
+      <button class="submit-btn" onclick="sendMessage()">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">DDS Eta Bhata</div>
+      <div class="footer-sub">Solanki Enterprises</div>
+      <p class="footer-desc">Your trusted partner for premium construction materials — red bricks, coal, sand, and woodworks. Quality built into every product, every delivery.</p>
+      <div style="display:flex;gap:12px;margin-top:10px;">
+        <a href="https://www.facebook.com/ddsita.bhata" style="width:36px;height:36px;background:rgba(181,52,28,0.2);border:1px solid rgba(181,52,28,0.4);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:14px;">f</a>
+        <a href="https://www.instagram.com/ddsitabhataballia/" style="width:36px;height:36px;background:rgba(181,52,28,0.2);border:1px solid rgba(181,52,28,0.4);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:14px;">In</a>
+        <a href="https://wa.me/918083870609" style="width:36px;height:36px;background:rgba(181,52,28,0.2);border:1px solid rgba(181,52,28,0.4);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:14px;">W</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#shop">Place Order</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">Red Bricks</a></li>
+        <li><a href="#products">Industrial Coal</a></li>
+        <li><a href="#products">River Sand</a></li>
+        <li><a href="#products">Timber & Woodworks</a></li>
+        <li><a href="#products">Aggregates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+918083870609">+91 8083870609</a></li>
+        <li><a href="https://wa.me/8083870609">WhatsApp Us</a></li>
+        <li><a href="#contact">Write to Us</a></li>
+        <li><a href="https://www.google.com/maps/place/DDS+Ita+Bhata/data=!4m2!3m1!1s0x0:0xf00af2f9deee85d4?sa=X&ved=1t:2428&hl=en-IN&ictx=111">Get Directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2000 DDS Eta Bhata · Solanki Enterprises. All rights reserved.</p>
+    <p style="color:var(--brick-light);font-size:11px;">Premium Building Materials Since Establishment</p>
+  </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-box">
+    <div class="modal-icon">✅</div>
+    <div class="modal-title" id="modalTitle">Order Placed!</div>
+    <p class="modal-desc" id="modalDesc">Thank you for your order. Our team at Solanki Enterprises will contact you within 24 hours to confirm your delivery details.</p>
+    <button class="modal-close" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ===== CART STATE =====
+const prices = {
+  brick: 8000,
+  coal: 11500,
+  sand: 1200,
+  wood: 0,
+  agg: 900
+};
+const names = {
+  brick: 'Red Bricks (1000 pcs)',
+  coal: 'Coal (1 tonne)',
+  sand: 'River Sand (1m³)',
+  wood: 'Woodworks (Custom)',
+  agg: 'Aggregates (1m³)'
+};
+const qtys = { brick: 0, coal: 0, sand: 0, wood: 0, agg: 0 };
+
+function changeQty(item, delta) {
+  qtys[item] = Math.max(0, qtys[item] + delta);
+  document.getElementById('qty-' + item).textContent = qtys[item];
+  updateSummary();
+}
+
+function updateSummary() {
+  const container = document.getElementById('summaryItems');
+  const totalEl = document.getElementById('totalAmt');
+  let total = 0;
+  let html = '';
+  let hasItems = false;
+
+  for (const key in qtys) {
+    if (qtys[key] > 0) {
+      hasItems = true;
+      const subtotal = qtys[key] * prices[key];
+      total += subtotal;
+      const displayAmt = prices[key] === 0 ? 'Quote' : '₹' + subtotal.toLocaleString('en-IN');
+      html += `<div class="summary-row">
+        <span class="name">${names[key]} ×${qtys[key]}</span>
+        <span class="amount">${displayAmt}</span>
+      </div>`;
+    }
+  }
+
+  container.innerHTML = hasItems ? html : '<div class="empty-cart">No items selected yet.<br>Add products from the left.</div>';
+  totalEl.textContent = total > 0 ? '₹' + total.toLocaleString('en-IN') + '+' : '₹0';
+}
+
+function addToCart(name, price, unit) {
+  showToast(name + ' added to order! Scroll to Order section.');
+  document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+}
+
+async function placeOrder() {
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const addr = document.getElementById('custAddress').value.trim();
+  const delivery = document.getElementById('custDelivery').value;
+  const note = document.getElementById('custNote').value.trim();
+
+  if (!name || !phone || !addr) {
+    showToast('⚠️ Please fill in your name, phone, and address.');
+    return;
+  }
+
+  const hasOrder = Object.values(qtys).some(q => q > 0);
+  if (!hasOrder) {
+    showToast('⚠️ Please select at least one product.');
+    return;
+  }
+
+  // Build order summary text
+  let orderDetails = '';
+  let total = 0;
+  for (const key in qtys) {
+    if (qtys[key] > 0) {
+      const subtotal = qtys[key] * prices[key];
+      total += subtotal;
+      const amt = prices[key] === 0 ? 'Custom Quote' : '₹' + subtotal.toLocaleString('en-IN');
+      orderDetails += `${names[key]} x${qtys[key]} = ${amt}\n`;
+    }
+  }
+  orderDetails += `\nEstimated Total: ₹${total.toLocaleString('en-IN')}+`;
+
+  const orderBtn = document.querySelector('.place-order-btn');
+  orderBtn.textContent = 'Placing Order...';
+  orderBtn.disabled = true;
+
+  try {
+    const response = await fetch('https://formspree.io/f/xgonyenv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: '🧱 New Order - DDS Eta Bhata',
+        name: name,
+        phone: phone,
+        delivery_address: addr,
+        delivery_timing: delivery,
+        order_items: orderDetails,
+        special_notes: note || 'None'
+      })
+    });
+
+    if (response.ok) {
+      document.getElementById('modalTitle').textContent = 'Order Placed Successfully! 🧱';
+      document.getElementById('modalDesc').textContent = `Thank you, ${name}! Your order has been received by Solanki Enterprises / DDS Eta Bhata. We will call you at ${phone} within 24 hours to confirm delivery to your site.`;
+      document.getElementById('successModal').classList.add('open');
+
+      // Reset form and quantities
+      Object.keys(qtys).forEach(k => { qtys[k] = 0; document.getElementById('qty-' + k).textContent = 0; });
+      updateSummary();
+      document.getElementById('custName').value = '';
+      document.getElementById('custPhone').value = '';
+      document.getElementById('custAddress').value = '';
+      document.getElementById('custNote').value = '';
+    } else {
+      showToast('❌ Failed to place order. Please call us directly.');
+    }
+  } catch (error) {
+    showToast('❌ Network error. Please check your connection and try again.');
+  }
+
+  orderBtn.textContent = '🧱 Place Order';
+  orderBtn.disabled = false;
+}
+
+async function sendMessage() {
+  const name = document.getElementById('cName').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  const subject = document.getElementById('cSubject').value.trim();
+  const msg = document.getElementById('cMessage').value.trim();
+
+  if (!name || !phone || !msg) {
+    showToast('⚠️ Please fill in your name, phone, and message.');
+    return;
+  }
+
+  const submitBtn = document.querySelector('.submit-btn');
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+
+  try {
+    const response = await fetch('https://formspree.io/f/xgonyenv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        email: email,
+        subject: subject,
+        message: msg
+      })
+    });
+
+    if (response.ok) {
+      document.getElementById('modalTitle').textContent = 'Message Sent! ✅';
+      document.getElementById('modalDesc').textContent = `Thank you, ${name}! We've received your message and will get back to you at ${phone} shortly.`;
+      document.getElementById('successModal').classList.add('open');
+      document.getElementById('cName').value = '';
+      document.getElementById('cPhone').value = '';
+      document.getElementById('cEmail').value = '';
+      document.getElementById('cSubject').value = '';
+      document.getElementById('cMessage').value = '';
+    } else {
+      showToast('❌ Failed to send. Please try again or call us directly.');
+    }
+  } catch (error) {
+    showToast('❌ Network error. Please check your connection and try again.');
+  }
+
+  submitBtn.textContent = 'Send Message →';
+  submitBtn.disabled = false;
+}
+
+function closeModal() {
+  document.getElementById('successModal').classList.remove('open');
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+
+function toggleMenu(btn) {
+  const links = document.querySelector('.nav-links');
+  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  links.style.flexDirection = 'column';
+  links.style.position = 'absolute';
+  links.style.top = '70px';
+  links.style.left = '0';
+  links.style.right = '0';
+  links.style.background = 'rgba(26,20,16,0.98)';
+  links.style.padding = '20px 5%';
+  links.style.gap = '20px';
+}
+
+// Close modal on overlay click
+document.getElementById('successModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+</script>
+</body>
+</html>
